@@ -146,6 +146,11 @@ boost::shared_ptr<Transmission> Robot::getTransmission(const std::string &name) 
 
 
 
+RobotState::RobotState()
+  : model_(0)
+{
+}
+
 RobotState::RobotState(Robot *model)
   : model_(model)
 {
