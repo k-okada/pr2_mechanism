@@ -11,7 +11,7 @@ include_directories(SYSTEM ${EIGEN3_INCLUDE_DIRS})
 include_directories(include ${catkin_INCLUDE_DIRS} ${urdfdom_INCLUDE_DIRS})
 
 catkin_package(
-    DEPENDS tinyxml urdfdom
+    DEPENDS urdfdom
     CATKIN_DEPENDS roscpp pr2_hardware_interface urdf kdl_parser pluginlib angles hardware_interface
     INCLUDE_DIRS include
     LIBRARIES pr2_mechanism_model
